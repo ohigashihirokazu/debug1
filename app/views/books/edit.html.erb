@@ -1,0 +1,10 @@
+<h1>Editing Book</h1>
+<%= render 'form', book: @book%>
+<%= form_for(@book) do |f| %>
+    
+    
+
+<h4><%= link_to "Show", book_path(@book.id) %>
+<%= link_to "Back", books_path(@book.id) %></h4> 
+
+<% end %>
